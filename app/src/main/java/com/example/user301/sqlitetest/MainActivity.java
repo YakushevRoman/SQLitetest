@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // создаем объект для создания и управления версиями БД
         dbHelper = new DBHelper(this);
+        // hi people
     }
 
 
