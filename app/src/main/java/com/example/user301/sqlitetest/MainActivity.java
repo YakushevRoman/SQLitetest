@@ -32,17 +32,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textView = findViewById(R.id.textView3);
 
-        btnAdd = (Button) findViewById(R.id.btnAdd);
+        btnAdd = findViewById(R.id.btnAdd);
         btnAdd.setOnClickListener(this);
 
-        btnRead = (Button) findViewById(R.id.btnRead);
+        btnRead =  findViewById(R.id.btnRead);
         btnRead.setOnClickListener(this);
 
-        btnClear = (Button) findViewById(R.id.btnClear);
+        btnClear = findViewById(R.id.btnClear);
         btnClear.setOnClickListener(this);
 
-        etName = (EditText) findViewById(R.id.etName);
-        etEmail = (EditText) findViewById(R.id.etEmail);
+        etName = findViewById(R.id.etName);
+        etEmail = findViewById(R.id.etEmail);
 
         // создаем объект для создания и управления версиями БД
         dbHelper = new DBHelper(this);
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         // а если следующей нет (текущая - последняя), то false - выходим из цикла
                     } while (c.moveToNext());
                     textView.setText(stringBuilder);
-                    
+
                 } else
                     Log.d(LOG_TAG, "0 rows");
                 c.close();
