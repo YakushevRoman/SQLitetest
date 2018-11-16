@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         // а если следующей нет (текущая - последняя), то false - выходим из цикла
                     } while (c.moveToNext());
                     textView.setText(stringBuilder);
+                    
                 } else
                     Log.d(LOG_TAG, "0 rows");
                 c.close();
